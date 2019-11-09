@@ -1,0 +1,32 @@
+@import '~antd/dist/antd.css';
+
+
+#layout {
+    height: 1000px;
+}
+
+#content-container {
+    background: linear-gradient(180deg, #001529 50%, #F0F2F5 50%);
+}
+
+#content-card {
+    background-color: rgba(0, 0, 0, 0)
+}
+
+.trigger {
+  font-size: 18px;
+  line-height: 64px;
+  padding: 0 24px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.trigger:hover {
+  color: #1890ff;
+}
+
+.logo {
+  height: 32px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 16px;
+}
