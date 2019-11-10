@@ -1,0 +1,35 @@
+.ant-card-meta-title{
+
+    font-size:11px !important;
+    text-transform: uppercase;
+    color:#8898AA !important;
+
+}
+
+.ant-card-body{
+
+    font-size:18px !important;
+    color:#4D4F5C !important;
+
+}
+
+.ant-card-body > p{
+
+    font-size:13px !important;
+    color:#4D4F5C !important;
+
+}
+
+.ant-avatar-image{
+
+    color:#0f0 !important;
+
+}
+
+.ant-card-meta-description{
+
+    color: #172B4D !important;
+    font-size:18px !important;
+    margin-bottom:20px;
+
+}

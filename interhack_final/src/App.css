@@ -2,11 +2,7 @@
 
 
 #layout {
-    height: 1000px;
-}
-
-#content-container {
-    background: linear-gradient(180deg, #001529 50%, #F0F2F5 50%);
+    height: 1200px;
 }
 
 #content-card {
@@ -27,6 +23,8 @@
 
 .logo {
   height: 32px;
-  background: rgba(255, 255, 255, 0.2);
+  background-image: url('./tactus.png');
+  background-size: 140px;
+  background-repeat: no-repeat;
   margin: 16px;
 }

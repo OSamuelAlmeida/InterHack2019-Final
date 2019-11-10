@@ -7,6 +7,9 @@ import HomePage from '../pages/HomePage';
 import StudentsPage from '../pages/StudentsPage';
 import TestsPage from '../pages/TestsPage';
 import LearningTestPage from '../pages/LearningTestPage';
+import AddStudentPage from '../pages/AddStudentPage';
+import StudentDetailsPage from '../pages/StudentDetailsPage';
+
 
 class MainTemplate extends Component {
   state = {
@@ -31,6 +34,12 @@ class MainTemplate extends Component {
               </Route>
               <Route path="/students" exact>
                   <StudentsPage />
+              </Route>
+              <Route path="/students/1" exact>
+                  <StudentDetailsPage />
+              </Route>
+              <Route path="/add-student" exact>
+                  <AddStudentPage />
               </Route>
               <Route path="/tests" exact>
                   <TestsPage />
