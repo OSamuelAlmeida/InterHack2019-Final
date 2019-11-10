@@ -12,15 +12,15 @@ class Intro extends Component {
             <div className='background'></div>
             <div className="logotop">
                 <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '100%'}}>
-                    <img src={logo} />
-                    <p style={{fontSize: '22px', maxWidth: '550px', textAlign: 'center', marginTop: '20px', fontWeight: 'bold'}}>
-                        Tactus é um sistema que visa auxiliar alunos e professores a encontrarem sua forma ideal de estudos
+                    <a href="/"><img src={logo} /></a>
+                    <p style={{color:'#fff', fontSize: '22px', maxWidth: '550px', textAlign: 'center', marginTop: '30px', marginBottom: '30px'}}>
+                        Tactus é um sistema que auxilia professores a encontrarem forma ideal de estudos para seus alunos
                     </p>
 
-                    <p style={{fontSize: '50px'}}>
-                        <FaVolumeUp style={{marginLeft: '10px', marginRight: '10px'}} />
-                        <FaEye style={{marginLeft: '10px', marginRight: '10px'}} />
-                        <FaRegHandSpock style={{marginLeft: '10px', marginRight: '10px'}} />
+                    <p style={{fontSize: '50px', color:'#fff'}}>
+                        <FaVolumeUp style={{marginLeft: '10px', marginRight: '10px'}} title="Auditivo" />
+                        <FaEye style={{marginLeft: '10px', marginRight: '10px'}} title="Visual" />
+                        <FaRegHandSpock style={{marginLeft: '10px', marginRight: '10px'}} title="Cinestésico" />
                     </p>
 
                 </div>

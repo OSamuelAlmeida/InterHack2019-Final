@@ -12,6 +12,8 @@
     background-image: url('https://media.edutopia.org/styles/responsive_2880px_16x9/s3/masters/d7_images/sutherland-inset4-ugcflex_0.jpg');
     background-position: center 0;
     background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+
     filter: blur(8px) brightness(65%);
 
 }

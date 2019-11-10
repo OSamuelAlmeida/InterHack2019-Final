@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "@antv/data-set": "^0.10.2",
+    "bizcharts": "^3.5.6",
+    "react-icons": "^3.8.0"
+  }
+}
