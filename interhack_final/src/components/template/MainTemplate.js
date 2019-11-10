@@ -9,6 +9,7 @@ import TestsPage from '../pages/TestsPage';
 import LearningTestPage from '../pages/LearningTestPage';
 import AddStudentPage from '../pages/AddStudentPage';
 import StudentDetailsPage from '../pages/StudentDetailsPage';
+import Intro from '../pages/Intro';
 
 
 class MainTemplate extends Component {
@@ -46,6 +47,9 @@ class MainTemplate extends Component {
               </Route>
               <Route path="/learning-test" exact>
                   <LearningTestPage />
+              </Route>
+              <Route path="/intro" exact>
+                  <Intro />
               </Route>
           </Switch>
         </ContentContainer>

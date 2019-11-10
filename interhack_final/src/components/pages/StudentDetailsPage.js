@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Avatar, Button, Card, Col, Row, Icon, Input, Table, Typography } from 'antd';
+import { Avatar, Button, Card, Col, Row, Icon, Input, Table, Typography, Badge } from 'antd';
 import {
   G2,
   Chart,
@@ -58,7 +58,7 @@ class StudentDetailsPage extends Component {
         title: 'Nota',
         dataIndex: 'grade',
         key: 'grade',
-        render: text => <p>{text}</p>,
+        render: (text) => (<p> <Badge status={text > 5 ? 'success' : 'error'} /> <a>{text}</a> </p>),
       }
     ];
 
@@ -76,32 +76,30 @@ class StudentDetailsPage extends Component {
         <Row>
           <Title level={3} style={{color:'#fff', zIndex: 10}}>Detalhes do Aluno</Title>
           <Card
-            style={{ width: 500, borderRadius: '10px' }}
+            style={{ width: 700, borderRadius: '10px', 'border': '0px' }}
             cover={
-              <img
-                alt="example"
-                style={{borderRadius: '10px'}}
-                src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"
-              />
+              <div style={{width: '700px', height: '200px', backgroundColor: '#7eafe1', position: 'absolute', borderRadius: '10px 10px 0 0'}}></div>
             }
           >
-            <Meta
-              avatar={<Avatar size={64} src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />}
-              title={<h1 style={{fontSize: '14pt'}}>Roberto Carlos</h1>}
-              description="Turma: 6o Ano"
-            />
-            <h4 style={{textAlign: 'center'}}>Tipo: Auditivo</h4>
 
-            <br/>
-            <br/>
+            <div style={{width: '700px', display: 'flex', flexDirection: 'row', justifyContent: 'center', marginTop: '85px'}}>
+                <div style={{width: '150', display: 'flex', flexDirection: 'column'}}>
 
-            <h1 style={{textAlign: 'center'}}>Desempenho</h1>
+                    <Avatar size={150} style={{backgroundColor: '#fff'}} src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />
+                    <h4 style={{textAlign: 'center', fontSize: '25px', color: '#172B4D', marginTop: '20px', marginBottom: '0px'}}>Roberto Carlos</h4>
+                    <h4 style={{textAlign: 'center', fontSize: '15px', color: '#748094', marginTop: '5px', marginBottom: '0px'}}>6º Ano</h4>
+                    <h4 style={{textAlign: 'center', fontSize: '13px', color: '#172B4D', marginTop: '5px', fontWeight: 'bold'}}>Auditivo</h4>
+
+                    <h1 style={{textAlign: 'center', fontSize: '20px', color: '#172B4D', fontWeight: 'bold', marginTop: '20px'}}>Desempenho</h1>
+
+                </div>
+            </div>
 
             <Table dataSource={dataSource} columns={columns} />
 
-            <p style={{textAlign: 'right'}}>Média aritmética: 6</p>
+            <p style={{textAlign: 'right'}}>Média aritmética: <b>6</b></p>
 
-            <Chart height={400} data={dataSource} scale={cols} forceFit>
+            <Chart height={400} style={{marginTop: '30px'}} data={dataSource} scale={cols} forceFit>
               <Axis name="name" />
               <Axis name="grade" />
               <Tooltip

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button, Card, Col, Row, Input, Select, Table, Typography } from 'antd';
+import { Button, Col, Row, Input, Select, Table, Typography } from 'antd';
 import InfoTitleCard from '../cards/InfoTitleCard';
 
 const { Title } = Typography;
@@ -86,7 +86,7 @@ class TestsPage extends Component {
 
             <Table dataSource={dataSource} columns={columns} />
             <br/>
-            <Button style={{float: 'right'}} type="primary">Salvar</Button>
+            <Button style={{backgroundColor:'#172B4D', borderColor: '#172B4D', color:'#ffffff', width: '160px', height: '40px', float: 'right'}}>Salvar</Button>
           </InfoTitleCard>
         </Row>
       </React.Fragment>

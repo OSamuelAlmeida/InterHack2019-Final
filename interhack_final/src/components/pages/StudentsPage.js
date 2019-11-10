@@ -52,21 +52,25 @@ class StudentsPage extends Component {
                 type="Auditivo"
                 image="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"
                 linkTo="students/1"
+                status="success"
               />
               <StudentCard
                 name="Maria Carolina"
                 type="Visual"
                 linkTo="students/2"
+                status="success"
               />
               <StudentCard
                 name="Lucas Generoso"
                 type="Cinestésico"
                 linkTo="students/3"
+                status="error"
               />
               <StudentCard
                 name="Mirian José"
                 type="Visual"
                 linkTo="students/4"
+                status="warning"
               />
 
             </InfoTitleCard>
