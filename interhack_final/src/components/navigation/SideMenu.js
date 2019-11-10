@@ -7,7 +7,7 @@ const { Sider } = Layout;
 class SideMenu extends Component {
   render() {
     return (
-      <Sider theme="light" trigger={null} collapsible collapsed={this.props.collapsed}>
+      <Sider theme="light" trigger={null} className="sider" collapsible collapsed={this.props.collapsed}>
         <div className="logo" />
         <Menu theme="light" mode="inline" defaultSelectedKeys={['1']}>
           <Menu.Item key="1">

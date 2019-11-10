@@ -17,7 +17,7 @@ class ContentContainer extends Component {
           />
           <Search
             placeholder="Procurar"
-            style={{ width: 200 }}
+            style={{ width: 250, backgroundColor: '#F7FAFC' }}
           />
           <Icon style={{fontSize: '18px', marginLeft: '650px', paddingRight: '20px', color: 'white'}} type="bell" />
           <Avatar size="large" icon="user" /><span style={{paddingLeft: '10px', color: 'white'}} span>Professor</span>
